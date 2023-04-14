@@ -1,17 +1,10 @@
 #include <libaudcore/i18n.h>
-#include <libaudcore/plugin.h>
-#include <libaudcore/preferences.h>
 #include <libaudcore/playlist.h>
-#include <libaudcore/playlist-data.h>
 #include <libaudcore/plugin.h>
-#include <libaudqt/menu.h>
-#include <libaudcore/audstrings.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <ctime>
-#include <iostream>
+
+#include <QUrl>
 #include <QDateTime>
+#include <QFileInfo>
 
 #define EXPORT __attribute__((visibility("default")))
 #define APPLICATION_ID "484736379171897345"
