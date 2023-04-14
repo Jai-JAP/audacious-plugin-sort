@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Other
+
+.idea
+.cache
+session.vim
+CMakeFiles
+cmake-build-debug
