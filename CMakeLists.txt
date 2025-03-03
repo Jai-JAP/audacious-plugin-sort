@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.10)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(audacious-plugin-sort)
@@ -16,7 +16,7 @@ find_package(Qt5Widgets REQUIRED)
 find_package(Qt5Core REQUIRED)
 
 # Creating RPC plugin
-add_library(audacious-plugin-sort SHARED main)
+add_library(audacious-plugin-sort SHARED main.cc)
 
 target_link_libraries(audacious-plugin-sort PUBLIC ${AUDACIOUS_LDFLAGS} PRIVATE Qt5::Widgets Qt5::Core)
 
